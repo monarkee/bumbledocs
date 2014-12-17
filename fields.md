@@ -146,16 +146,11 @@ S3FileFields are similar to FileFields, except they have the ability to upload t
     ])
 
 <a name="hasonefield"></a>
-### HasOneField
-
-Many times you need to relate your entries to other models. A HasOneField uses the one-to-one relationship
-
-<a name="belongstofield"></a>
-### BelongsToField
+### HasOneField &amp; BelongsToField
 
 Many times you need to relate entries to other entries. A BelongsToField uses a Laravel one-to-one relationship with another model. So if you have a user that has one address you can define that field like so:
 
-    new BelongsToField('status'),
+    new HasOneField('address')
 
 <a name="datetimefield"></a>
 ### DateTimeField
