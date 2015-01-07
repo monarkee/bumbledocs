@@ -18,7 +18,7 @@ When your model is instantiated inside of Bumble, it expects a ```setFields()```
     {
         return new Fieldset([
             new TextField('title'),
-            new SlugField('slug', ['set_from' =&gt; 'title'])
+            new SlugField('slug', ['set_from' => 'title'])
         ]);
     }
 
@@ -27,8 +27,8 @@ Notice how we're simply returning a new ```Fieldset``` object, which accepts an 
     public function setFields()
     {
         return new Fieldset([
-            'tab-one' =&gt; [new TextField('title')],
-            'tab-two' =&gt; [new SlugField('slug', ['set_from' =&gt; 'title'])]
+            'tab-one' => [new TextField('title')],
+            'tab-two' => [new SlugField('slug', ['set_from' => 'title'])]
         ]);
     }
 
