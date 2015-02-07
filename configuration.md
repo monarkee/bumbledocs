@@ -14,11 +14,11 @@ This lets you configure the URL a user is sent to when they click the "Visit Sit
 
     'site-url' => 'http://bumblecms.com',
 
-## Authentication Columns
+## Site Image
 
-This lets you choose which columns to authenticate users with.
+You can use an image instead of text for the site's title. Just set the site-title-image to the URL of the image you want to use.
 
-    'auth_columns' => ['email', 'password']
+    'site-title=image' => 'http://yoursite.com/img/logo.png'
 
 ## Admin Prefix
 
