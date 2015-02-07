@@ -9,9 +9,9 @@ You may want to have specialized views in your Bumble installation for things li
 
 ### 1. Create a route
 
-You can create a route that uses the admin prefix you've set for your installation by calling `Config::get('bumble::admin_prefix')`. If you ever change the admin prefix, this will make sure your route changes as well.
+You can create a route that uses the admin prefix you've set for your installation by calling `config('bumble.admin_prefix')`. If you ever change the admin prefix, this will make sure your route changes as well.
 
-    Route::get(Config::get('bumble::admin_prefix').'/coolio', [
+    Route::get(config('bumble.admin_prefix').'/coolio', [
         'uses' => 'CustomController@index',
     ]);
 
@@ -44,7 +44,7 @@ Your custom view can share Bumble's master layout by extending it in your view l
                     </div>
                 </div>
 
-                {{!-- Your content goes here --}}
+                {{-- Your content goes here --}}
             </main>
         </section>
     @stop
