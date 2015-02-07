@@ -1,12 +1,6 @@
 # Fields
 
-Fields are just objects which handle displaying content from your database, giving you a view in the admin, and process data inputted from request. They handle things like:
-
-* Knowing which database column they belong to
-* Showing placeholders in form elements
-* Setting up which Field Widgets to use
-* Displaying help text
-* Processing input data into the correct format for saving to the database
+Fields are just objects which handle displaying content from your database, giving you a view in the admin, and process data inputted from request. They handle things like knowing which database column they belong to, showing placeholders in form elements, setting up which Field Widgets to use, displaying help text, and processing input data into the correct format for saving to the database
 
 ### FieldTypes
 
