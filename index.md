@@ -1,4 +1,4 @@
-## Bumble Documentation
+# Bumble Documentation
 
 Bumble is a Laravel package that aims to be your go-to CMS package. It strives to provide an easy-to-use administration interface, flexible data modeling via FieldTypes, and data portability by not holding your data hostage.
 
