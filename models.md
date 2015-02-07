@@ -1,3 +1,5 @@
+# Models
+
 - [Extend BumbleModel](#extendbumblemodel)
 - [Add your model to `config/bumble.php`](#addingmodels)
 - [Base Models](#basemodels)
@@ -5,8 +7,6 @@
 - [Show a model in the top navigation](#topnav)
 - [Hide a model from the side navigation](#sidenav)
 - [Show a description for a model](#description)
-
-# Models
 
 <a name="extendbumblemodel"></a>
 ## 1. Extend `BumbleModel`
