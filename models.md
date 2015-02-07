@@ -6,6 +6,8 @@
 - [Hide a model from the side navigation](#sidenav)
 - [Show a description for a model](#description)
 
+# Models
+
 <a name="extendbumblemodel"></a>
 ## 1. Extend `BumbleModel`
 To configure a model for use within Bumble's admin, all models you wish to use inside Bumble have to extend `Monarkee\Bumble\Models\BumbleModel`. This base class extends Eloquent and sets up all of the necessary groundwork needed by the CMS. If you use a "base model" for your models, make sure it extends `BumbleModel` as well.
