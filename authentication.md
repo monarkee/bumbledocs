@@ -1,9 +1,9 @@
 ## Authentication
 
-[Overview](#overview)
-[Customizing a User's First and Last Name](#names)
-[Configuring Authentication Columns](#authcolumns)
-[Limiting Access To The Admin](#limitingaccess)
+- [Overview](#overview)
+- [Customizing a User's First and Last Name](#names)
+- [Configuring Authentication Columns](#authcolumns)
+- [Limiting Access To The Admin](#limitingaccess)
 
 <a name="overview">Overview</a>
 Laravel's authentication feature is supported out-of-the-box, and you may use your own ```User``` Eloquent model. To make it so Bumble can use your User model, simple add ```use BumbleUserTrait;``` to it. This allows the CMS to get the full name of the user and the [Gravatar](http://gravatar.com) for the user.
