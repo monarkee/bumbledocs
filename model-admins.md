@@ -9,7 +9,7 @@
 
 <a name="overview"></a>
 ## Overview
-Bumble stores its configuration in "Model Admin" classes. These classes store validation rules, field configuration, and other CMS-specific parameters. `ModelAdmin` classes have to implement a `bumble()` method:
+Bumble stores its configuration in "Model Admin" classes. These classes store validation rules, field configuration, and other CMS-specific parameters. Your model classes have to implement a `bumble()` method which references the class name that stores its configuration:
 
     use Monarkee\Bumble\Models\BumbleModel;
 
