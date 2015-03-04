@@ -33,7 +33,7 @@ To get started setting up your model's validation, add a `$rules` property to yo
 <a name="fields"></a>
 ## Setting Up Fields
 
-Field definitions are store in `ModelAdmin` classes. When your `ModelAdmin` is instantiated, it requires a `setFields()` method to be implemented that returns a `Fieldset`. Here's an example of a model with one [Fieldset](/docs/fieldsets) and two [FieldTypes](/docs/fieldtypes):
+Field definitions are stored in `ModelAdmin` classes. When your `ModelAdmin` is instantiated, it requires a `setFields()` method to be implemented that returns a `Fieldset`. Here's an example of a model with one [Fieldset](/docs/fieldsets) and two [FieldTypes](/docs/fieldtypes):
 
     use Monarkee\Bumble\Models\ModelAdmin;
 
