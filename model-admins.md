@@ -26,9 +26,9 @@ Simply reference your Model Admin class, and Bumble will do the rest.
 <a name="validation"></a>
 ## Setting Up Validation
 
-Validation is not required for using a model in Bumble, which is nice for those times when you're just getting started and wish to input content without setting up validation.
+Validation is not required for using a `ModelAdmin` in Bumble, which is nice for those times when you're just getting started and wish to input content without setting up validation.
 
-To get started setting up your model's validation, add a `$rules` property to your model. This should be set to an array of validation rules just as you would use with Laravel's validator. See the section on Validation in the [Laravel Documentation](http://laravel.com/docs/5.0/validation) to find rules you can use for your models.
+To get started setting up your `ModelAdmin`'s validation, add a `$rules` property to your `ModelAdmin`. This should be set to an array of validation rules just as you would use with Laravel's validator. See the section on Validation in the [Laravel Documentation](http://laravel.com/docs/5.0/validation) to find the rules you can use.
 
 <a name="fields"></a>
 ## Setting Up Fields
