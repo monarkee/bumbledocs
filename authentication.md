@@ -25,7 +25,7 @@ Bumble will then show the appropriate fields and will authenticate using that da
 
 <a name="limitingaccess"></a>
 ## Limiting Access To The Admin
-Bumble checks that a user is authenticated before they can see the admin, but there are times when you only want certain users to be able to access the admin. To do that you simply have to reimpliment the `bumble_auth` filter in your app. Here's an example that checks if the first segment is Bumble's admin prefix setting and if the value of the user's group column is equal to `0`.
+Bumble checks that a user is authenticated before they can see the admin, but there are times when you only want certain users to be able to access the admin. To do that you simply have to reimpliment the `bumble_auth` filter in your app. Here's an example that checks if the first segment is Bumble's admin prefix setting and if the value of the user's group column is not equal to `0`.
 
     Route::filter('bumble_auth', function() {
         if (Request::segment(1) == config('bumble.admin_prefix') && Auth::user()->group != '0')
