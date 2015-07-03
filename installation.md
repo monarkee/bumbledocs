@@ -25,6 +25,9 @@ After that, you can publish the configuration file and public assets to their pr
 Bumble can generate a users table and populate it with a test admin user by publishing its migrations into your app and issuing the following commands:
 
     php artisan vendor:publish --provider="Monarkee\Bumble\Providers\BumbleServiceProvider" --tag="migrations"
+    
+    // If you want to seed the database with an admin User
+    php artisan vendor:publish --provider="Monarkee\Bumble\Providers\BumbleServiceProvider" --tag="seeds"
 
     composer update
 
