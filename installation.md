@@ -10,7 +10,7 @@ Bumble is installed via Composer. To get started, simply add the following to yo
 
 The next step is to add Bumble's Service Provider to your `app.php` file in the `config` folder. In the `providers` array, simply add this:
 
-    'Monarkee\Bumble\Providers\BumbleServiceProvider'
+    Monarkee\Bumble\Providers\BumbleServiceProvider::class
 
 ## Publishing Assets & Configuration
 
