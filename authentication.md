@@ -1,25 +1,20 @@
 ## Authentication
 
 - [Overview](#overview)
-- [Customizing a User's First and Last Name](#names)
 - [Configuring Authentication Columns](#authcolumns)
 - [Limiting Access To The Admin](#limitingaccess)
 
 <a name="overview"></a>
 ## Overview
-Laravel's authentication feature is supported out-of-the-box, and you may use your own ```User``` Eloquent model. To make it so Bumble can use your User model, simple add ```use BumbleUserTrait;``` to it. This allows the CMS to get the full name of the user and the [Gravatar](http://gravatar.com) for the user.
-
-<a name="names"></a>
-## Customizing a User's First and Last Name
-By default, the admin will look for `first_name` and `last_name` columns and use those to show your name. If you wish to customize them, simply open the `bumble.php` configuration file and change the keys to the correct ones.
+Laravel authentication is supported out-of-the-box, and you may use your own `User` Eloquent model. By default, Bumble will use the Gravatar for the user as the avatar.
 
 <a name="authcolumns"></a>
 ## Configuring Authentication Columns
-Bumble allows you to configure the login to the admin. You will usually have a `User` model which authenticates with its `username` or `email` columns, along with a `password`. You can configure which columns are used in the `bumble.php` configuration file.
+Bumble allows you to configure the login to the admin. You will usually have a `User` model which authenticates with its `email` and `password` columns. If you want to use different columns, you can configure them in the `bumble.php` configuration file.
 
-For example, you may want to set it up so your users log in with the same `email` and `password` they use in a different area of the app. You can set it up like this:
+For example, you may want to set it up so your users log in with the same `username` and `password` they use in a different area of the app. You can set it up like this:
 
-    'auth_columns' => ['email', 'password']
+    'auth_columns' => ['username', 'password']
 
 Bumble will then show the appropriate fields and will authenticate using that data.
 
