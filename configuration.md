@@ -31,7 +31,9 @@ This enables you to configure the prefix of the admin. If you wanted your admin 
 This lets you configure the URLs of the admin routes. This is useful if your app uses "Sign In" instead of "Login" or "Sign Out" instead of "Logout".
 
     'admin' => [
-        'login' => 'sign-in',
-        'logout' => 'sign-out',
-        'dashboard' => 'home',
+        'login' => 'login',
+        'logout' => 'logout',
+        'dashboard' => 'dashboard',
+        'forgot_password' => 'forgot-password',
+        'reset_password' => 'reset-password',
     ],
